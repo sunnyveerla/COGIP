@@ -6,7 +6,7 @@ To overcome these limitations, we are developing an advanced framework that inte
 
 Taken together by integrating advanced genomic analysis, machine learning, and bioinformatics, this study aims to uncover novel genomic aberrations and their molecular functions across diverse tumor and sample types, especially liquid-based. These insights will enhance our understanding of genomic instability in tumorigenesis and metastasis, and key oncogenic drivers, ultimately contributing to the development of more effective targeted therapies.
 
-#### Analysis Pipeline:
+#### COGIP (Characterization of Oncogenic Genomic Instability analysis Pipeline):
 The version of tools and packages to be used will be specified in each step (see Chapter 3). The scripts within the pipeline are based on Snakemake (6.15.1), Python (v3.11.6), R (v4.3.2), and Java (JDK 11).
 
 (1) **Preprocessing**. This step includes quality assessment and quality trimming on the raw reads. (Fastp will be used for QC and trimming, together with fastqc and multiQC to generate the QC reports.)
