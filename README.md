@@ -21,8 +21,10 @@ The version of tools and packages to be used will be specified in each step (see
 
 (6) **Absolute copy number profile**. We will further use other information (such as TP53 allele frequency) to infer the tumour fraction to select the best ploidy and cellularity solution. We apply this best solution to our relative copy number profile and generate the final absolute copy number profile for each sample. (Rascal will be used for this step.)
 
-#### (1) Preprocessing, (2) Alignment, (3) Clean-up, (4) Relative copy number profile, (5) Ploidy and cellularity solutions, (6) Absolute copy number profile,
+##### (1) Preprocessing, (2) Alignment, (3) Clean-up, (4) Relative copy number profile, (5) Ploidy and cellularity solutions, (6) Absolute copy number profile,
 ```bash
 snakemake --use-conda  --configfile config/config.yaml --cores 30  --snakefile workflow/Snakemake_HCsig_Pipeline.smk
 snakemake --use-conda  --configfile config/config.yaml --cores 30  --snakefile workflow/Snakemake_QDNASeq_RASCAL_CN_matrix.smk
 ```
+##### SRIQ
+https://github.com/sunnyveerla/SRIQ
