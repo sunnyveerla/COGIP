@@ -1,0 +1,2 @@
+sample_name	patient	type	fastq_1	fastq_2
+CS2_05	HGSOC_96	ffBlood	/media/sunny/WorkDisk/SV/HCsig/Data/CTG_2021_072_seqonly/2021_072-seqonly/fastq/CS2_05_S5_R1_001.fastq.gz	/media/sunny/WorkDisk/SV/HCsig/Data/CTG_2021_072_seqonly/2021_072-seqonly/fastq/CS2_05_S5_R2_001.fastq.gz

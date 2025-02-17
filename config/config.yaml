@@ -1,1 +1,32 @@
+#__author__ = "Srinivas Veerla"
+#__copyright__ = "Copyright 2024, Srinivas Veerla"
+#__email__ = "srinivas.veerla@med.lu.se"
+#__license__ = "GPL-3"
+
+# Working directory
+workdir: '/media/sunny/WorkDisk/SV/HCsig/'
+
+
+# Sample information file
+samples: 'config/All_samples.tsv'
+
+#Location for results storage
+outputdir: 'results_HCsig/'
+
+#Reads Mapping 
+bwa_mapping:
+  threads: 48
+  
+# QDNAseq settings
+QDNAseq:
+  binsize: 50 
+  maxSize: 850  
+  threads: 24
+
+# method to generate the copy number profiles (either rascal
+CN_method: rascal
+
+# Rascal setting (min cellularity and other settings)
+Rascal:
+  min_cellularity: 0
 
