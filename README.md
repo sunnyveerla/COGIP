@@ -26,5 +26,5 @@ The version of tools and packages to be used will be specified in each step (see
 snakemake --use-conda  --configfile config/config.yaml --cores 30  --snakefile workflow/Snakemake_HCsig_Pipeline.smk
 snakemake --use-conda  --configfile config/config.yaml --cores 30  --snakefile workflow/Snakemake_QDNASeq_RASCAL_CN_matrix.smk
 ```
-##### SRIQ
+(7) **SRIQ**
 https://github.com/sunnyveerla/SRIQ
