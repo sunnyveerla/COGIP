@@ -1,10 +1,41 @@
 ## Integrative Genomic Analysis of High-Grade Serous Ovarian Cancer Using Liquid-Based Cytology and Tumor Samples – modelling genomic instability
 
-This project focuses on high-grade serous ovarian cancer (HGSC), an aggressive and lethal gynecologic malignancy driven by genomic instability. Previous studies from our group have assessed genomic aberrations, particularly copy number alterations (CNAs), to classify tumors and liquid-based cervical cytology samples from women with and without HGSC. However, existing CNA-based approaches are inherently subjective and limited in capturing focal genomic events with molecular specificity, providing only a broad genomic overview. Consequently, these methods constrain our deeper understanding of the mechanisms driving tumorigenesis and metastasis progression.
+This project focuses on high-grade serous ovarian cancer (HGSC), an
+aggressive and lethal gynecologic malignancy driven by genomic instability.
+Previous studies from our group have assessed genomic aberrations,
+particularly copy number alterations (CNAs), to classify tumors and liquidbased
+cervical cytology samples from women with and without HGSC.
+However, existing CNA-based approaches are inherently subjective and
+limited in capturing focal genomic events with molecular specificity,
+providing only a broad genomic overview. Consequently, these methods
+constrain our deeper understanding of the mechanisms driving
+tumorigenesis and metastasis progression.
 
-To overcome these limitations, we are developing an advanced framework that integrates shallow whole-genome sequencing (sWGS) data with SRIQ, a machine-learning method for identifying significant and shared focal and long CNA regions across diverse sample types, including cervical cytology samples, blood, plasma, and tumor tissues. To enhance specificity, CNA regions overlapping with normal control samples are excluded. The identified CNAs will be validated using an external cohort dataset with similar sample types. Additionally, given the genomic similarities between HGSC and triple-negative breast cancer (TNBC), particularly basal-like subtypes, we will further validate these CNA regions using TNBC data from the SCAN-B. Finally, these CNAs will be mapped to genes and regulatory regions to assess their functional relevance. The role/s of the involved genes will further be evaluated in relation to tumor and patient-related variables, including degree of differentiation, metastatic spread and immune cell markers (as examples) using in-house tissue microarrays (n=140 HGSC, n=231 TNBC, n=yyy SEC). 
+To overcome these limitations, we are developing an advanced framework
+that integrates shallow whole-genome sequencing (sWGS) data with SRIQ
+(Systematic Random forest Integration to Qualitative threshold), a machinelearning
+method for identifying significant and shared focal and long CNA
+regions across diverse sample types, including cervical cytology samples,
+blood, plasma, and tumor tissues. The identified CNAs will be validated
+using an external cohort with similar sample types. Additionally, given the
+genomic similarities between HGSC and triple-negative breast cancer
+(TNBC), particularly basal-like subtypes, we will further validate these CNA
+regions using data from the SCAN-B study. Finally, these CNAs will be
+mapped to genes and non-coding regulatory regions to assess their
+functional relevance in tumorigenesis and metastasis progression. The
+identified genes will be evaluated across tumor types (HGSC, TNBC, and
+serous endometrial carcinoma (SEC)) for their association with patient
+variables, including differentiation, metastasis, and immune markers, using
+tissue microarrays (TMA).
 
-Taken together by integrating advanced genomic analysis, machine learning, and bioinformatics, this study aims to uncover novel genomic aberrations and their molecular functions across diverse tumor and sample types, especially liquid-based. These insights will enhance our understanding of genomic instability in tumorigenesis and metastasis, and key oncogenic drivers, ultimately contributing to the development of more effective targeted therapies.
+Taken together, by integrating advanced genomic analysis, machine
+learning, and bioinformatics, this study aims to uncover novel genomic
+aberrations and their molecular functions across diverse tumor and sample
+types, especially liquid-based. These insights will enhance our
+understanding of genomic instability in the activation of oncogenic drivers
+that promote tumorigenesis and metastasis, contributing to the
+development of more effective targeted therapies across tumor types driven
+by genomic instability.
 
 #### COGIP (Characterization of Oncogenic Genomic Instability analysis Pipeline):
 The version of tools and packages to be used will be specified in each step (see Chapter 3). The scripts within the pipeline are based on Snakemake (6.15.1), Python (v3.11.6), R (v4.3.2), and Java (JDK 11).
