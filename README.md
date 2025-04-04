@@ -44,7 +44,8 @@ The version of tools and packages to be used will be specified in each step (see
 
 (2) **Alignment**. The human reference genome will be indexed. The reads will be mapped to the reference genome. (BWA will be used for both indexing and alignment.)
 
-(3) **Clean-up**. After alignment, the SAM files will be sorted and the PCR duplicates will be marked and removed. Also, the .sorted.deduplicated.sam will be converted to BAM files. The BAM files will be indexed for later analysis. (Picard will be used for sorting SAM, marking duplicates, removing duplicates and converting SAM to BAM. samtools will be used for generating the clean_up stats and for indexing the BAM files.)
+(3) **Clean-up**. After alignment, the SAM files will be sorted and the PCR duplicates will be marked and removed. GATK software (v4.1) was applied for base quality score
+recalibration (BQSR). Also, the .sorted.deduplicated.sam will be converted to BAM files. The BAM files will be indexed for later analysis. (Picard will be used for sorting SAM, marking duplicates, removing duplicates and converting SAM to BAM. samtools will be used for generating the clean_up stats and for indexing the BAM files.)
 
 (4) **Relative copy number profile**. The BAM files will be analyzed through fixed-size binning, filtering, correction, and normalization to generate the read counts per bin. This data will then be used for the segmentation of bins and for generating the relative copy number profile. (QDNAseq will be used for this step.)
 
